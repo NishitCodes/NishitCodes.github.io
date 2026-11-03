@@ -1,40 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>NishitCodes | Github</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishit Indora | Software Engineer & Cloud Architect</title>
+  <meta name="description" content="Portfolio of Nishit Indora - Software Engineer, Cloud Infrastructure Architect, and AI Systems Developer.">
   <link rel="icon" href="assets/img/favicon.ico">
-  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>               <!-- bootstrap -->
-  <link rel='stylesheet' href='assets/css/vendor.css'>                      <!-- plugin -->
-  <link rel='stylesheet' href='assets/css/theme_black_red.css' id="theme"> <!-- main style -->
-  <link rel='stylesheet' href='assets/css/custom.css'>                      <!-- custom style -->
-  <link rel='stylesheet' href='assets/css/demo.css'>                        <!-- demo style -->
-  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
-
 <body>
-  <!-- site loader -->
-  <div class="site-loader">
-    <span></span>
-    <p>Nishit</p> <!-- site loader text -->
-  </div>
-  <!-- site loader -->
 
-  <!-- site bg -->
-  <div class="site-bg">
-    <div class="site-bg__img"></div>
-    <div class="site-bg__video"></div>
-    <canvas class="site-bg__canvas"></canvas>
+  <!-- Interactive Night Sky Constellation Canvas -->
+  <canvas id="constellation-canvas"></canvas>
+  <div class="space-vignette"></div>
+
+  <!-- Page Content -->
+  <div class="content-wrapper">
+
+    <!-- Top Navigation -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-brand">
+          <span class="brand-symbol">~/</span>
+          <span>NishitCodes</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        <span>Open to Engineering Projects & Roles</span>
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Nishit Indora</span>.
+      </h1>
+      <p class="hero-tagline">
+        Software Engineer • Cloud Architect • AI Systems
+      </p>
+      <p class="hero-bio">
+        I architect resilient cloud infrastructure, build intelligent AI integrations, and develop high-efficiency software tools. Passionate about distributed systems, autonomous agents, and deterministic automation.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <span>Explore Projects</span>
+          <span>↓</span>
+        </a>
+        <a href="https://github.com/NishitCodes" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          <span>GitHub</span>
+          <span>↗</span>
+        </a>
+        <a href="mailto:tihsin2@gmail.com" class="btn-secondary">
+          <span>Email Me</span>
+          <span>✉</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-header">
+        <p class="section-tag">// Portfolio</p>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Gemini for Echo -->
+        <article class="project-card">
+          <div>
+            <div class="project-header">
+              <span class="project-category">Voice AI & Serverless</span>
+            </div>
+            <h3 class="project-name">Gemini for Echo</h3>
+            <p class="project-desc">
+              An intelligent voice integration bridging Amazon Alexa hardware with Google Gemini multimodal APIs. Enables low-latency natural conversational reasoning and complex query processing directly on Echo smart speakers.
+            </p>
+          </div>
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Gemini API</span>
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">Alexa Skills Kit</span>
+              <span class="tech-tag">REST</span>
+            </div>
+            <a href="https://github.com/NishitCodes/Gemini-for-Echo" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span>View Repository</span>
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Oracle Cloud Infrastructure Lab -->
+        <article class="project-card">
+          <div>
+            <div class="project-header">
+              <span class="project-category">DevOps & Cloud Architecture</span>
+            </div>
+            <h3 class="project-name">Oracle Cloud Infrastructure Lab</h3>
+            <p class="project-desc">
+              Production-hardened Always-Free cloud architecture. Features automated bootstrap scripts, Terraform IaC, strict quota hard-caps guaranteeing $0.00 billing, and Docker container orchestration on Linux.
+            </p>
+          </div>
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">OCI Cloud</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Terraform</span>
+              <span class="tech-tag">Ubuntu 24.04</span>
+              <span class="tech-tag">Nginx</span>
+              <span class="tech-tag">PowerShell</span>
+            </div>
+            <a href="https://github.com/NishitCodes/Oracle-Cloud-Lab" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span>View Architecture</span>
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: GnuCash AI Integration -->
+        <article class="project-card">
+          <div>
+            <div class="project-header">
+              <span class="project-category">FinTech & Machine Learning</span>
+            </div>
+            <h3 class="project-name">GnuCash AI Integration</h3>
+            <p class="project-desc">
+              Automated financial ledger intelligence pipeline. Uses LLM semantic matching and structured classification to parse bank statements, reconcile accounts, and auto-assign double-entry accounting categories with high accuracy.
+            </p>
+          </div>
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LLM Classification</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">GnuCash API</span>
+              <span class="tech-tag">JSON Pipeline</span>
+            </div>
+            <a href="https://github.com/NishitCodes/GnuCash-AI-Integration" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span>View Project</span>
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: Systems Automation Suite -->
+        <article class="project-card">
+          <div>
+            <div class="project-header">
+              <span class="project-category">Systems & Tooling</span>
+            </div>
+            <h3 class="project-name">Systems Automation & Task Engines</h3>
+            <p class="project-desc">
+              Collection of resilient automation utilities including HotspotKeeper network persistence, headless automation engines, and developer productivity shortcuts tailored for Windows and POSIX systems.
+            </p>
+          </div>
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PowerShell</span>
+              <span class="tech-tag">Win32 API</span>
+              <span class="tech-tag">Bash</span>
+              <span class="tech-tag">Automation</span>
+            </div>
+            <a href="https://github.com/NishitCodes" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span>Explore Tools</span>
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="section-header">
+        <p class="section-tag">// Capabilities</p>
+        <h2 class="section-title">Technical Expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category-card">
+          <h3 class="skill-cat-title">⚡ Languages</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>JavaScript / Node.js</li>
+            <li>Bash / Shell Scripting</li>
+            <li>PowerShell</li>
+            <li>SQL</li>
+            <li>HTML5 / Modern CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-category-card">
+          <h3 class="skill-cat-title">☁️ Cloud & DevOps</h3>
+          <ul class="skill-list">
+            <li>Oracle Cloud (OCI)</li>
+            <li>Docker & Docker Compose</li>
+            <li>Linux Server Hardening</li>
+            <li>Terraform / IaC</li>
+            <li>Nginx / Reverse Proxies</li>
+            <li>UFW, Iptables & Fail2ban</li>
+          </ul>
+        </div>
+
+        <div class="skill-category-card">
+          <h3 class="skill-cat-title">🧠 AI & Machine Learning</h3>
+          <ul class="skill-list">
+            <li>Gemini 1.5 Pro / Flash API</li>
+            <li>Local LLMs (Ollama / CUDA)</li>
+            <li>System 1 Fast Decision Models (Laya)</li>
+            <li>Prompt Engineering & RAG</li>
+            <li>Semantic Embeddings</li>
+            <li>Agentic Tool Workflows</li>
+          </ul>
+        </div>
+
+        <div class="skill-category-card">
+          <h3 class="skill-cat-title">🛠️ Architecture & Tools</h3>
+          <ul class="skill-list">
+            <li>Git / GitHub CI/CD</li>
+            <li>RESTful API Architecture</li>
+            <li>Asynchronous Queues</li>
+            <li>SSH Public-Key Cryptography</li>
+            <li>System Debugging & Profiling</li>
+            <li>Task Automation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Callout -->
+    <section class="contact-section" id="contact">
+      <div class="contact-card">
+        <h2 class="contact-title">Let's Build Something Exceptional</h2>
+        <p class="contact-desc">
+          Interested in cloud infrastructure, AI integrations, or software engineering? My inbox is always open.
+        </p>
+        <a href="mailto:tihsin2@gmail.com" class="btn-primary">
+          <span>Send Message (tihsin2@gmail.com)</span>
+          <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Designed & Built by Nishit Indora • Hosted on Oracle Cloud Always Free (Nginx + Docker)</p>
+    </footer>
+
   </div>
-  <!-- /site bg -->
-    
-  <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-  <script src='assets/js/vendor/bootstrap.min.js'></script>
-  <script src='assets/js/vendor/plugin.js'></script>
-  <script src='assets/js/variable.js'></script>
-  <script src='assets/js/main.js'></script>
-  <script src='assets/js/demo.js'></script>
+
+  <!-- Constellation Script -->
+  <script src="assets/js/constellation.js"></script>
 </body>
 </html>
